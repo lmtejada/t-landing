@@ -1,11 +1,10 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
 import 'bootstrap/dist/css/bootstrap.css';
 
-import Header from "./header"
-// import "./layout.css"
-import "../sass/layout.scss"
+import Navigation from "../components/navigation";
+import "../sass/layout.scss";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -20,7 +19,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Navigation />
         <div
           style={{
             margin: `0 auto`,
@@ -30,12 +29,10 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
         </div>
+        <footer className="footer" align="center">
+          © {new Date().getFullYear()} Tisa Technology
+        </footer>
       </>
     )}
   />

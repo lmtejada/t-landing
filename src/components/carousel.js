@@ -19,7 +19,7 @@ const CustomCarousel = () => (
         <Carousel.Item>
             <img
                 className="d-block w-100"
-                src="https://diariomedico.blob.core.windows.net/cms/sites/4/2015/02/27/155824955.jpg"
+                src="http://www.elobservador24.com/wp-content/uploads/2018/09/fisioterapia.jpg"
                 alt="Third slide"
             />
 
