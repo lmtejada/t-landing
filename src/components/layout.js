@@ -21,6 +21,7 @@ const Layout = ({ children }) => (
       <>
         <Navigation />
         <div
+          className="margin-top-16"
           style={{
             margin: `0 auto`,
             maxWidth: 960,

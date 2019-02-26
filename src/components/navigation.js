@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from "gatsby";
 import "./navigation/navigation.scss";
 
 const Navigation = () => (
