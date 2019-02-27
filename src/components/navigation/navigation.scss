@@ -1,5 +1,10 @@
 @import 'src/sass/variables';
 
 .navbar {
+    padding: 16px;
     background-color: $color-primary-branding;
+
+    .navbar-nav .nav-item a {
+        color: white;
+    }
 }

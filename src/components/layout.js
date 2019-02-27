@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import 'bootstrap/dist/css/bootstrap.css';
 
-import Navigation from "../components/navigation";
+import Navigation from "../components/navigation/navigation";
 import Container from 'react-bootstrap/Container';
 import "../sass/layout.scss";
 
