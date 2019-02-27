@@ -11,7 +11,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <CustomCarousel />
-    <Link to="/about-us/">Go to page 2</Link>
+    {/* <Link to="/about-us/">Go to page 2</Link> */}
   </Layout>
 )
 

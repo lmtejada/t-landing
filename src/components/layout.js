@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from "gatsby";
 import 'bootstrap/dist/css/bootstrap.css';
 
 import Navigation from "../components/navigation";
+import Container from 'react-bootstrap/Container';
 import "../sass/layout.scss";
 
 const Layout = ({ children }) => (
@@ -20,17 +21,9 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Navigation />
-        <div
-          className="margin-top-16"
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
+        <Container>
           <main>{children}</main>
-        </div>
+        </Container>
         <footer className="footer" align="center">
           © {new Date().getFullYear()} Tisa Technology
         </footer>
