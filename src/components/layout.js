@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 
 import Navigation from "../components/navigation/navigation";
+import Footer from "../components/footer/footer";
 import Container from 'react-bootstrap/Container';
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -25,9 +26,7 @@ const Layout = ({ children }) => (
         <Container fluid={true}>
           <main>{children}</main>
         </Container>
-        <footer className="footer" align="center">
-          © {new Date().getFullYear()} Tisa Technology
-        </footer>
+        <Footer />
       </>
     )}
   />

@@ -4,7 +4,6 @@ import Nav from 'react-bootstrap/Nav';
 import { Link } from "gatsby";
 
 import "./navigation.scss";
-import logo from "../../images/tisa.png"
 
 const Navigation = () => (
     <Navbar>
