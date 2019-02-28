@@ -1,11 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-// import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
-import CustomCarousel from "../components/carousel/carousel"
+import CustomCarousel from "../components/carousel/carousel";
 
 const IndexPage = () => (
   <Layout>
@@ -15,4 +14,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default IndexPage;

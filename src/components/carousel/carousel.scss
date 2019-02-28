@@ -1,3 +1,25 @@
-.button {
-    background-color: coral;
+@import '../../sass/variables.scss';
+
+.carousel {
+    .carousel-item {
+        height: calc(100vh - 40px);
+        background-color: $color-third-branding;
+        img {
+            opacity: 0.5;
+        }
+        .carousel-caption {
+            h1 {
+                font-size: 80px;
+            }
+            p {
+                font-size: 40px;
+            }
+            button {
+                background-color: $color-primary-branding;
+                border-color: $color-primary-branding;
+                padding: 15px 50px 15px 50px;
+                font-size: 30px;
+            }
+        }
+    }
 }

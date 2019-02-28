@@ -1,7 +1,10 @@
-@import './variables';
+@import './variables.scss';
 
 body {
-    background-color: lightgray;
+    background-color: #ffffff;
+    .container-fluid{
+        padding: 0;
+    }
 }
 
 footer {
