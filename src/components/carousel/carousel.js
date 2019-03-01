@@ -2,9 +2,9 @@ import React from "react";
 
 import Carousel from 'react-bootstrap/Carousel';
 
-import image1 from "../../images/business.jpg";
-import image2 from "../../images/medicine-2.jpg";
-import image3 from "../../images/brainstorming.jpg";
+import image1 from "../../images/business.jpeg";
+import image2 from "../../images/medicine.jpeg";
+import image3 from "../../images/brainstorming.jpeg";
 import "./carousel.scss";
 
 const CustomCarousel = () => (
