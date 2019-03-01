@@ -3,5 +3,22 @@
 footer {
     padding: 16px;
     color: white;
-    background-color: $color-secundary-branding;
+    background-color: lightgrey;
+    
+    svg {
+        margin-right: 16px;
+        font-size: 32px;
+
+        &.facebook-icon {
+            color: #4267b2;
+        }
+
+        &.youtube-icon {
+            color: #ED3833;
+        }
+
+        &.twitter-icon {
+            color: #38A1F3;
+        }
+    }
 }
