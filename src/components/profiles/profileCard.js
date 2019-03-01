@@ -2,17 +2,18 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 
 import "./profileCard.scss";
+import { FaComment } from "react-icons/fa";
 
 const ProfileCard = (props) => (
-    <Card style={{ width: '18rem' }} className="text-center">
+    <Card className="text-center">
         <Card.Img variant="top" src={props.image} />
         <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>{props.name}</Card.Title>
+            <Card.Subtitle className="mb-3">{props.role}</Card.Subtitle>
             <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                <FaComment className="icon" />
+                {props.children}
             </Card.Text>
-            <button type="button" className="btn btn-primary btn-lg align-self-center">Go somewhere</button>
         </Card.Body>
     </Card>
 )

@@ -12,9 +12,15 @@ import "./profiles.scss";
 const Profiles = () => (
     <Container>
         <CardDeck>
-            <ProfileCard image={image1} />
-            <ProfileCard image={image2} />
-            <ProfileCard image={image3} />
+            <ProfileCard image={image1} name="Primer Fulano" role="Ocupación">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </ProfileCard>
+            <ProfileCard image={image2} name="Segundo Fulano" role="Ocupación">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </ProfileCard>
+            <ProfileCard image={image3} name="Tercer Fulano" role="Ocupación">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </ProfileCard>
         </CardDeck>
     </Container>
 )
