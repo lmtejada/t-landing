@@ -1,4 +1,8 @@
+@import '../../sass/variables.scss';
+
 .features {
-    margin: 80px auto;
-    padding: 0 20px;
+    margin: auto;
+    padding: 80px 20px;
+    background-color: $color-primary-branding;
+    color: white;
 }
