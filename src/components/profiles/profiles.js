@@ -10,15 +10,15 @@ import image3 from "../../images/person3.jpeg";
 import "./profiles.scss";
 
 const Profiles = () => (
-    <Container>
+    <Container className="profiles">
         <CardDeck>
-            <ProfileCard image={image1} name="Primer Fulano" role="Ocupación">
+            <ProfileCard image={image1} name="Primer Fulano" occupation="Ocupación">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </ProfileCard>
-            <ProfileCard image={image2} name="Segundo Fulano" role="Ocupación">
+            <ProfileCard image={image2} name="Segundo Fulano" occupation="Ocupación">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </ProfileCard>
-            <ProfileCard image={image3} name="Tercer Fulano" role="Ocupación">
+            <ProfileCard image={image3} name="Tercer Fulano" occupation="Ocupación">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </ProfileCard>
         </CardDeck>
