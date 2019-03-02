@@ -1,24 +1,15 @@
 @import 'src/sass/variables';
 
 footer {
-    padding: 16px;
-    color: white;
-    background-color: lightgrey;
-    
-    svg {
-        margin-right: 16px;
-        font-size: 32px;
+    padding: 24px;
+    background-color: $color-third-branding;
+    color: $color-secundary-branding;
 
-        &.facebook-icon {
-            color: #4267b2;
-        }
-
-        &.youtube-icon {
-            color: #ED3833;
-        }
-
-        &.twitter-icon {
-            color: #38A1F3;
+    a {
+        svg {
+            margin-right: 16px;
+            font-size: 32px;
+            color: $color-secundary-branding;
         }
     }
 }
