@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 
 import CustomCarousel from "../components/carousel/carousel";
 import Profiles from "../components/profiles/profiles";
+import Plans from "../components/plans/plans";
 import Features from "../components/features/features";
 
 const IndexPage = () => (
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <CustomCarousel />
     <Features />
     <Profiles />
+    <Plans />
     {/* <Link to="/about-us/">Go to page 2</Link> */}
   </Layout>
 )
