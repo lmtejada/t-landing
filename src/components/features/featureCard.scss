@@ -1,0 +1,14 @@
+@import '../../sass/variables.scss';
+
+.feature {
+    align-items: center;
+    border: 0;
+    .card-text {
+        .icon {
+            color: $color-primary-branding;
+            display: block;
+            font-size: 80px;
+            margin: 10px auto 20px auto;
+        }
+    }
+}
