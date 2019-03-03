@@ -9,7 +9,8 @@ import "./features.scss";
 
 const Features = () => (
     <Container className="features col-md-12">
-        <div className="row">
+        <h1 className="text-center">Sabemos lo que necesitas...</h1>
+        <div className="row items">
             <div className="col-md-3 col-sm-12">
                 <FeatureCard name="Administrar">
                     <FaChartLine className="icon" />

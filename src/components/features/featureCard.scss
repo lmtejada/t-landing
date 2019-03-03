@@ -3,12 +3,17 @@
 .feature {
     align-items: center;
     border: 0;
+    background-color: $color-primary-branding;
+    .card-title {
+        font-size: 30px;
+        color: white;
+    }
     .card-text {
+        color: white;
         .icon {
-            color: $color-primary-branding;
             display: block;
             font-size: 80px;
-            margin: 10px auto 20px auto;
+            margin: 20px auto 20px auto;
         }
     }
 }
