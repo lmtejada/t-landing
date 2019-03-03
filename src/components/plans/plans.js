@@ -7,7 +7,7 @@ import CardDeck from "react-bootstrap/CardDeck";
 import "./plans.scss";
 
 const Plans = () => (
-    <Container>
+    <Container className="plans col-md-12">
         <CardDeck>
             <PlanCard />
             <PlanCard />

@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import "./planCard.scss";
 
 const PlanCard = (props) => (
-    <Card className="text-center">
+    <Card className="text-center plan">
         <Card.Header>Featured</Card.Header>
         <Card.Body>
             <Card.Title>Special title treatment</Card.Title>
