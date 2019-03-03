@@ -4,12 +4,11 @@
     align-items: center;
     border: 0;
     background-color: $color-primary-branding;
+    color: white;
     .card-title {
         font-size: 30px;
-        color: white;
     }
     .card-text {
-        color: white;
         .icon {
             display: block;
             font-size: 80px;

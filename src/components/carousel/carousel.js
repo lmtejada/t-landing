@@ -31,7 +31,7 @@ const CustomCarousel = () => (
             <Carousel.Caption className="d-flex h-100 align-items-center justify-content-center">
                 <div className="d-flex flex-column">
                     <h1>Second slide label</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <button type="button" className="btn btn-primary btn-lg align-self-center">Conoce más</button>
                 </div>
             </Carousel.Caption>
