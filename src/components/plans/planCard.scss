@@ -1,31 +1,47 @@
 @import '../../sass/variables.scss';
 
-.plan {    
-    // .card-header {
-    //     color: $color-primary-branding;
-    // }
+.plan {
+    background-color: $color-primary-branding-03;
+    transition: transform .3s;
+    border: 0;
+    
+    .check {
+        color: $color-success;
+        margin-right: 16px;
+    }
+    
+    .warning {
+        color: $color-warning;
+        margin-right: 16px;
+    }
+    
+    .card-header {
+        color: white;
+        text-transform: uppercase;
+        font-size: 24px;
+        background-color: $color-primary-branding;
+    }
+    
+    .card-footer {
+        font-size: 30px;
+        color: white;
+        background-color: $color-primary-branding;
+    }
+    
+    button {
+        background-color: $color-primary-branding;
+        border: 0;
+        transition: 0.4s;
+    }
+}
 
+.plan:hover {
+    cursor: pointer;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
 
-    // align-items: center;
-    // border: 0;
-    // img {
-    //     max-width: 70%;
-    //     height: auto;
-    // }
-    // .card-subtitle {
-    //     color: $color-primary-branding;
-    // }
-    // .card-text {
-    //     background-color: $color-light-gray;
-    //     padding: 20px;
-    //     border-radius: 20px;
-    //     .icon {
-    //         color: $color-primary-branding;
-    //         margin-right: 10px;
-    //         font-size: 20px;
-    //     }
-    // }
-
-
-
+.btn:hover {
+    background-color: $color-primary-branding-03;
 }
