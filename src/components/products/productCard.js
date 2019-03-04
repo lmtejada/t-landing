@@ -10,6 +10,7 @@ const ProductCard = (props) => (
             </div>
             <div className="col-lg-4 col-md-12 image">
                 <img
+                    alt="product"
                     src={props.image}
                 />
             </div>
