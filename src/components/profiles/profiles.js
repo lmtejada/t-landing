@@ -3,8 +3,8 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import ProfileCard from "./profileCard";
 
-import image1 from "../../images/person1.jpeg";
-import image2 from "../../images/person2.jpeg";
+import image1 from "../../images/person2.jpeg";
+import image2 from "../../images/person1.jpeg";
 import image3 from "../../images/person3.jpeg";
 import "./profiles.scss";
 
@@ -14,19 +14,19 @@ const Profiles = () => (
         <div className="row items">
             <div className="col-lg-4 col-sm-12">
                 <ProfileCard
-                    image={image1} name="Primer Fulano" occupation="Ocupación">
+                    image={image1} name="Felipe Marín" occupation="Ocupación">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </ProfileCard>
             </div>
             <div className="col-lg-4 col-sm-12">
                 <ProfileCard
-                    image={image2} name="Segundo Fulano" occupation="Ocupación">
+                    image={image2} name="Mateo Parra" occupation="Ocupación">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </ProfileCard>
             </div>
             <div className="col-lg-4 col-sm-12">
                 <ProfileCard
-                    image={image3} name="Tercer Fulano" occupation="Ocupación">
+                    image={image3} name="Daniel Flórez" occupation="Ocupación">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </ProfileCard>
             </div>

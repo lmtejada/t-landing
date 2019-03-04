@@ -1,0 +1,26 @@
+@import '../../sass/variables.scss';
+
+.product {
+    .text {
+        background-color: $color-light-gray;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: justify;
+        h2 {
+            color: $color-primary-branding;
+            margin-left: 20px;
+        }
+    }
+    button {
+        background-color: $color-primary-branding;
+        border-color: $color-primary-branding;
+        display: block;
+        margin-top: 20px;
+    }
+    img {
+        width: inherit;
+        height: auto;
+        object-fit: cover;
+        margin: 10px;
+    }
+}
