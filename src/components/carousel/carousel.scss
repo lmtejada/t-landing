@@ -6,19 +6,22 @@
         background-color: $color-third-branding;
         img {
             opacity: 0.5;
+            max-width: 100%; 
+            height: inherit;
+            object-fit: cover;
         }
         .carousel-caption {
             h1 {
-                font-size: 80px;
+                font-size: 8vw;
             }
             p {
-                font-size: 40px;
+                font-size: 5vw;
             }
             button {
                 background-color: $color-primary-branding;
                 border-color: $color-primary-branding;
                 padding: 15px 50px 15px 50px;
-                font-size: 30px;
+                font-size: 4vw;
             }
         }
     }
