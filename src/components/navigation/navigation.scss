@@ -4,17 +4,35 @@ nav.navbar {
     padding: 16px;
     background-color: $color-third-branding;
     color: $color-secundary-branding;
-
+    
     .navbar-nav .nav-item a {
         color: $color-secundary-branding;
         margin-right: 16px;
         text-transform: uppercase;
     }
-
+    
+    .nav-link {
+        padding: 0px;
+    }
+    
     .navbar-nav .nav-item a:hover {
-        color: white;
+        color: white ;
         text-decoration: none;
         font-weight: bold;
+        background-color: $color-third-branding;
     }
-
+    
+    .dropdown-menu {
+        background-color: $color-third-branding;
+    }
+    
+    .dropdown {
+        .dropdown-toggle.nav-link {
+            color: $color-secundary-branding;
+        }
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 }

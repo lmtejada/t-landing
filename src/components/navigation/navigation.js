@@ -1,30 +1,26 @@
 import React from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { Link } from "gatsby";
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link, navigate } from "gatsby";
 
 import "./navigation.scss";
 
 const Navigation = () => (
     <Navbar>
-        {/* <Navbar.Brand href="/">
-            <img
-                src={logo}
-                width="96"
-                height="34"
-                className="d-inline-block align-top"
-                alt="Tisa logo"
-            />
-        </Navbar.Brand> */}
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="navbar-nav" className="d-flex justify-content-center">
             <Nav>
-                {/* <Nav.Link href="/">Inicio</Nav.Link>
-                <Nav.Link href="/about-us">Sobre nosotros</Nav.Link> */}
                 <Nav.Item><Link to="/">Inicio</Link></Nav.Item>
-                <Nav.Item><Link to="/tisa-med">TisaMed</Link></Nav.Item>
-                <Nav.Item><Link to="/hosting">Hosting</Link></Nav.Item>
-                <Nav.Item><Link to="/about-us/">Acerca de nosotros</Link></Nav.Item>
+                <NavDropdown title="Productos">
+                    <NavDropdown.Item onClick={() => navigate("/tisa-med")}>
+                        TisaMed
+                    </NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => navigate("/hosting")}>
+                        Hosting
+                    </NavDropdown.Item>
+                </NavDropdown>
+                <Nav.Item><Link to="/about-us/">Nosotros</Link></Nav.Item>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
