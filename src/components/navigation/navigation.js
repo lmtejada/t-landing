@@ -22,10 +22,12 @@ const Navigation = () => (
                 {/* <Nav.Link href="/">Inicio</Nav.Link>
                 <Nav.Link href="/about-us">Sobre nosotros</Nav.Link> */}
                 <Nav.Item><Link to="/">Inicio</Link></Nav.Item>
+                <Nav.Item><Link to="/tisa-med">TisaMed</Link></Nav.Item>
+                <Nav.Item><Link to="/hosting">Hosting</Link></Nav.Item>
                 <Nav.Item><Link to="/about-us/">Acerca de nosotros</Link></Nav.Item>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
 )
-        
+
 export default Navigation;
