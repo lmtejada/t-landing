@@ -2,7 +2,6 @@ import React from "react";
 
 import Container from 'react-bootstrap/Container';
 import PlanCard from "./planCard";
-import CardDeck from "react-bootstrap/CardDeck";
 
 import { MdErrorOutline, MdDone } from "react-icons/md";
 
@@ -38,18 +37,26 @@ const FeaturesList = ({ plan }) => {
 };
 
 const Plans = () => (
-    <Container className="plans col-md-10">
-        <CardDeck>
-            <PlanCard plan="free" price="0 /mes" >
-                <FeaturesList plan="free" />
-            </PlanCard>
-            <PlanCard plan="silver" price="$19.900 /mes">
-                <FeaturesList plan="silver" />
-            </PlanCard>
-            <PlanCard plan="gold" price="$23.900 /mes" >
-                <FeaturesList plan="gold" />
-            </PlanCard>
-        </CardDeck>
+    <Container className="plans col-sm-10">
+        <h1 className="text-center">Planes y precios</h1>
+        <hr className="divider" />
+        <div className="row items">
+            <div className="mb-5 mx-auto col-lg-4 col-sm-8">
+                <PlanCard plan="free" price="0 /mes" >
+                    <FeaturesList plan="free" />
+                </PlanCard>
+            </div>
+            <div className="mb-5 mx-auto col-lg-4 col-sm-8">
+                <PlanCard plan="silver" price="$19.900 /mes">
+                    <FeaturesList plan="silver" />
+                </PlanCard>
+            </div>
+            <div className="mb-5 mx-auto col-lg-4 col-sm-8">
+                <PlanCard plan="gold" price="$23.900 /mes" >
+                    <FeaturesList plan="gold" />
+                </PlanCard>
+            </div>
+        </div>
     </Container>
 )
 

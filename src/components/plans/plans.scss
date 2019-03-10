@@ -1,9 +1,17 @@
 @import '../../sass/variables.scss';
 
 .plans {
-    .card-deck {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        align-items: center;
+    padding-top: 50px;
+    h1 {
+        color: $color-primary-branding;
+    }
+    hr.divider {
+        max-width: 10rem;
+        border-width: .2rem;
+        border-color: $color-primary-branding;
+        margin-bottom: 50px;
+    }
+    .items {
+        margin: 50px auto 20px auto;
     }
 }

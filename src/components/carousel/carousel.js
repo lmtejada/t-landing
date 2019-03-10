@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -19,7 +20,9 @@ const CustomCarousel = () => (
                 <div className="d-flex flex-column">
                     <h1>Second slide label</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button type="button" className="btn btn-primary btn-lg align-self-center">Conoce más</button>
+                    <Link to="/tisa-med/">
+                        <button type="button" className="btn btn-primary btn-lg align-self-center">Conoce más</button>
+                    </Link>
                 </div>
             </Carousel.Caption>
         </Carousel.Item>
