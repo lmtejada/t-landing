@@ -1,5 +1,16 @@
+@import '../../sass/variables.scss';
+
 .profiles {
     padding-top: 50px;
+    h1 {
+        color: $color-primary-branding;
+    }
+    hr.divider {
+        max-width: 10rem;
+        border-width: .2rem;
+        border-color: $color-primary-branding;
+        margin-bottom: 50px;
+    }
     .items {
         margin: 50px auto 20px auto;
     }

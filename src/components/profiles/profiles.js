@@ -11,6 +11,7 @@ import "./profiles.scss";
 const Profiles = () => (
     <Container className="profiles col-sm-12">
         <h1 className="text-center">Nuestro equipo</h1>
+        <hr className="divider" />
         <div className="row items">
             <div className="col-lg-4 col-sm-12">
                 <ProfileCard
