@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -9,9 +10,11 @@ import ProductCard from "../components/product/productCard";
 
 import image from "../images/medicine.jpeg";
 
+
 const TisaMed = () => (
     <Layout>
         <SEO title="TisaMed" />
+
         <Product productTitle="TisaMed">
             <ProductCard
                 image={image}
@@ -20,7 +23,10 @@ const TisaMed = () => (
                 <button type="button" className="btn btn-primary btn-lg align-self-center">Conoce más</button>
             </ProductCard>
         </Product>
-        <Plans />
+
+        <ScrollAnimation animateIn="fadeInDown">
+            <Plans />
+        </ScrollAnimation>
     </Layout>
 )
 
