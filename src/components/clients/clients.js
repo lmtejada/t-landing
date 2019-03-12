@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import Container from 'react-bootstrap/Container';
 
@@ -12,10 +13,14 @@ const Clients = () => (
         <hr className="divider" />
         <div className="row content d-flex align-items-center justify-content-center">
             <div className="col-sm-12 col-md-4 col-lg-3">
-                <img src={logo1} alt="Logo" />
+                <ScrollAnimation animateIn="fadeInLeft">
+                    <img src={logo1} alt="Logo" />
+                </ScrollAnimation>
             </div>
             <div className="col-sm-12 col-md-4 col-lg-3">
-                <img src={logo2} alt="Logo" />
+                <ScrollAnimation animateIn="fadeInRight">
+                    <img src={logo2} alt="Logo" />
+                </ScrollAnimation>
             </div>
         </div>
     </Container>

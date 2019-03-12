@@ -12,9 +12,9 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <CustomCarousel />
 
-    <ScrollAnimation animateIn="zoomIn">
+    {/* <ScrollAnimation animateIn="fainIn"> */}
       <Features />
-    </ScrollAnimation>
+    {/* </ScrollAnimation> */}
   </Layout>
 )
 
