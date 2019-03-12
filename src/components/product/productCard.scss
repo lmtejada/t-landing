@@ -1,6 +1,6 @@
 @import '../../sass/variables.scss';
 
-.product {
+.productCard {
     .text {
         background-color: $color-light-gray;
         border-radius: 20px;
@@ -17,14 +17,33 @@
         display: block;
         margin-top: 20px;
     }
-    .image {
-        align-items: center;
-        vertical-align: middle;
-    }
     img {
         width: inherit;
         height: auto;
         object-fit: cover;
         margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+    .productCard {
+        margin: 0;
+        padding: 0;
+        .content {
+            margin: 0;
+            padding: 0;
+        }
+        .image {
+            order: 1;
+        }
+        .text {
+            order: 2;
+        }
+        h2 {
+            text-align: center;
+        }
+        button {
+            margin: 20px auto 0 auto;
+        }
     }
 }
