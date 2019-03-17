@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import Container from 'react-bootstrap/Container';
 import ProfileCard from "./profileCard";
@@ -10,8 +11,12 @@ import "./profiles.scss";
 
 const Profiles = () => (
     <Container className="profiles col-sm-12">
-        <h1 className="text-center">Nuestro equipo</h1>
-        <hr className="divider" />
+
+        <ScrollAnimation animateIn="pulse">
+            <h1 className="text-center">Nuestro equipo</h1>
+            <hr className="divider" />
+        </ScrollAnimation>
+
         <div className="row items">
             <div className="col-lg-4 col-sm-12">
                 <ProfileCard

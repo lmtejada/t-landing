@@ -6,6 +6,7 @@ import Navigation from "../components/navigation/navigation";
 import Footer from "../components/footer/footer";
 import Container from 'react-bootstrap/Container';
 
+import "animate.css/animate.min.css";
 import 'bootstrap/dist/css/bootstrap.css';
 import "../sass/layout.scss";
 
