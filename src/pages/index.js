@@ -11,14 +11,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <CustomCarousel />
-<<<<<<< HEAD
     <FeaturePanels />
-=======
-
-    {/* <ScrollAnimation animateIn="fainIn"> */}
-      <Features />
-    {/* </ScrollAnimation> */}
->>>>>>> 21150ba2e7b7b8edcd4dcbdf2ababf31547e1851
   </Layout>
 )
 
