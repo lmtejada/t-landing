@@ -1,21 +1,18 @@
 @import '../../sass/variables.scss';
 
-.productCard {
+.singleFeature {
+    // height: calc(100vh - 80px);
+    margin: 30px auto 0 auto;
+    padding: 50px;
     .text {
-        background-color: $color-light-gray;
-        border-radius: 20px;
+        margin: auto;
         padding: 20px;
         text-align: justify;
+        font-size: 1.1em;
         h2 {
             color: $color-primary-branding;
             margin-left: 20px;
         }
-    }
-    button {
-        background-color: $color-primary-branding;
-        border-color: $color-primary-branding;
-        display: block;
-        margin-top: 20px;
     }
     img {
         width: inherit;
@@ -24,9 +21,17 @@
         margin: 10px;
     }
 }
+.color {
+    background-color: $color-primary-branding;
+    // background-color: $color-third-branding;
+    color: white;
+    h2 {
+        color: white !important;
+    }
+}
 
 @media only screen and (max-width: 990px) { 
-    .productCard {
+    .singleFeature {
         margin: 0;
         padding: 0;
         .content {
@@ -34,10 +39,11 @@
             padding: 0;
         }
         .image {
-            order: 1;
+            order: 1 !important;
+            padding: 30px 50px 0 50px;
         }
         .text {
-            order: 2;
+            order: 2 !important;
         }
         h2 {
             text-align: center;
