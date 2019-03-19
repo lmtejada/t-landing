@@ -6,7 +6,7 @@ import SEO from "../components/seo";
 import Product from "../components/product/product";
 import ProductCard from "../components/product/productCard";
 
-import image from "../images/medicine.jpeg";
+import image from "../images/hosting.jpeg";
 
 const Hosting = () => (
     <Layout>
@@ -14,9 +14,11 @@ const Hosting = () => (
         <Product productTitle="Hosting">
             <ProductCard
                 image={image}
-                title="Hosting">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                <button type="button" className="btn btn-primary btn-lg align-self-center">Conoce más</button>
+                title="Servicio de alojamiento para páginas Web">
+                Si cuentas con un dominio, te ofrecemos el diseño y hosting de tu página.
+                <br></br>
+                Cuentanos lo que quieres y déjalo en nuestras manos.
+                <button onClick={() => window.location.href = 'mailto:em@i.l'} type="button" className="btn btn-primary btn-lg align-self-center">Comenzar</button>
             </ProductCard>
         </Product>
     </Layout>
