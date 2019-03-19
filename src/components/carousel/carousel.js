@@ -18,8 +18,8 @@ const CustomCarousel = () => (
             />
             <Carousel.Caption className="d-flex h-100 align-items-center justify-content-center">
                 <div className="d-flex flex-column">
-                    <h1>Second slide label</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h1>TisaMed</h1>
+                    <p>Administración de historias clínicas</p>
                     <Link to="/tisa-med/">
                         <button type="button" className="btn btn-primary btn-lg align-self-center">Conoce más</button>
                     </Link>
@@ -48,7 +48,7 @@ const CustomCarousel = () => (
             <Carousel.Caption className="d-flex h-100 align-items-center justify-content-center">
                 <div className="d-flex flex-column">
                     <h1>Third slide label</h1>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur</p>
                 </div>
             </Carousel.Caption>
         </Carousel.Item>

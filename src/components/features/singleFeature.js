@@ -5,7 +5,7 @@ import "./singleFeature.scss";
 
 const SingleFeature = (props) => (
 	<div className={props.color ? "singleFeature col-sm-12 color" : "singleFeature col-sm-12"}>
-		<ScrollAnimation animateIn={props.animation === 'right' ? 'fadeInRight' : 'fadeInLeft'} animateOnce="true">
+		<ScrollAnimation animateIn={props.animation === 'right' ? 'fadeInRight' : 'fadeInLeft'} animateOnce={true}>
 			<div className="row content">
 				<div
 					className="col-lg-8 col-md-8 col-sm-12 text"

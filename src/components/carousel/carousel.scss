@@ -15,7 +15,7 @@
                 font-size: 8vw;
             }
             p {
-                font-size: 5vw;
+                font-size: 4vw;
             }
             button {
                 background-color: $color-primary-branding;
@@ -24,10 +24,10 @@
                 padding: 10px 30px 10px 30px;
                 font-size: 3vw;
                 &:hover {
-                    background-color: $color-primary-branding-03;
+                    background-color: $color-third-branding;
                 }
                 &:active, &:focus {
-                    background-color: $color-primary-branding-03 !important;
+                    background-color: $color-third-branding !important;
                     box-shadow: none !important;
                 }
             }
