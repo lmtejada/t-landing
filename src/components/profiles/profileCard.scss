@@ -4,8 +4,8 @@
     align-items: center;
     border: 0;
     img {
-        max-width: 50%;
-        height: auto;
+        width: auto;
+        max-height: 25em;
     }
     .card-subtitle {
         color: $color-primary-branding;

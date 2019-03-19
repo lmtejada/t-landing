@@ -12,12 +12,12 @@ const Clients = () => (
         <h1 className="text-center">Nuestros clientes</h1>
         <hr className="divider" />
         <div className="row content d-flex align-items-center justify-content-center">
-            <div className="col-sm-12 col-md-4 col-lg-3">
+            <div className="col-sm-12 col-md-4 col-lg-3 d-flex align-items-center justify-content-center">
                 <ScrollAnimation animateIn="fadeInLeft">
                     <img src={logo1} alt="Logo" />
                 </ScrollAnimation>
             </div>
-            <div className="col-sm-12 col-md-4 col-lg-3">
+            <div className="col-sm-12 col-md-4 col-lg-3 d-flex align-items-center justify-content-center">
                 <ScrollAnimation animateIn="fadeInRight">
                     <img src={logo2} alt="Logo" />
                 </ScrollAnimation>
