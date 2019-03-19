@@ -1,6 +1,7 @@
 import React from "react";
 
 import Container from 'react-bootstrap/Container';
+import Title from "../title/title";
 import PlanCard from "./planCard";
 
 import { MdErrorOutline, MdDone } from "react-icons/md";
@@ -38,8 +39,7 @@ const FeaturesList = ({ plan }) => {
 
 const Plans = () => (
     <Container className="plans col-sm-10">
-        <h1 className="text-center">Planes y precios</h1>
-        <hr className="divider" />
+        <Title title="Planes y precios" />
         <div className="row items">
             <div className="mb-5 mx-auto col-lg-4 col-sm-8">
                 <PlanCard plan="free" price="0 /mes" >

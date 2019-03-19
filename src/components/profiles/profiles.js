@@ -1,22 +1,18 @@
 import React from "react";
-import ScrollAnimation from 'react-animate-on-scroll';
 
 import Container from 'react-bootstrap/Container';
 import ProfileCard from "./profileCard";
+import Title from "../title/title";
 
 import image1 from "../../images/person1.jpeg";
 import image2 from "../../images/person2.jpg";
 import image3 from "../../images/person3.jpeg";
+
 import "./profiles.scss";
 
 const Profiles = () => (
     <Container className="profiles col-sm-12">
-
-        <ScrollAnimation animateIn="pulse">
-            <h1 className="text-center">Nuestro equipo</h1>
-            <hr className="divider" />
-        </ScrollAnimation>
-
+        <Title title="Nuestro equipo" />
         <div className="row items">
             <div className="col-lg-4 col-sm-12">
                 <ProfileCard
