@@ -7,7 +7,7 @@ import "./title.scss";
 
 const Title = ({ title }) => (
     <Container className="title col-sm-12">
-        <ScrollAnimation animateIn="pulse" animateOnce="true">
+        <ScrollAnimation animateIn="pulse" animateOnce={true}>
             <h1 className="text-center">{title}</h1>
             <hr className="divider" />
         </ScrollAnimation>

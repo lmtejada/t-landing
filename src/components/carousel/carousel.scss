@@ -19,9 +19,17 @@
             }
             button {
                 background-color: $color-primary-branding;
-                border-color: $color-primary-branding;
+                border: 0;
+                transition: 0.4s;
                 padding: 10px 30px 10px 30px;
                 font-size: 3vw;
+                &:hover {
+                    background-color: $color-primary-branding-03;
+                }
+                &:active, &:focus {
+                    background-color: $color-primary-branding-03 !important;
+                    box-shadow: none !important;
+                }
             }
         }
     }

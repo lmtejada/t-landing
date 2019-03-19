@@ -27,12 +27,6 @@
         color: white;
         background-color: $color-primary-branding;
     }
-    
-    button {
-        background-color: $color-primary-branding;
-        border: 0;
-        transition: 0.4s;
-    }
 }
 
 .plan:hover {
@@ -40,8 +34,4 @@
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1);
-}
-
-.btn:hover {
-    background-color: $color-primary-branding-03;
 }

@@ -13,9 +13,17 @@
     }
     button {
         background-color: $color-primary-branding;
-        border-color: $color-primary-branding;
+        border: 0;
+        transition: 0.4s;
         display: block;
         margin-top: 20px;
+        &:hover {
+            background-color: $color-primary-branding-03;  
+        }
+        &:active, &:focus {
+            background-color: $color-primary-branding-03 !important;
+            box-shadow: none !important;
+        }
     }
     img {
         width: inherit;
