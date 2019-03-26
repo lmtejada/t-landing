@@ -5,6 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import image1 from "../../images/medicine.jpeg";
 import image2 from "../../images/business.jpeg";
+import tisaLogo from "../../images/tisa-logo.png";
 // import image3 from "../../images/brainstorming.jpeg";
 import "./carousel.scss";
 
@@ -26,18 +27,25 @@ const CustomCarousel = () => (
                 </div>
             </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
-            <img
-                className="d-block w-100"
-                src={image2}
-                alt="Second slide"
-            />
-            <Carousel.Caption className="d-flex h-100 align-items-center justify-content-center">
-                <div className="d-flex flex-column">
-                    <h1>TISA</h1>
-                    <p>Time saving technology</p>
-                </div>
-            </Carousel.Caption>
+        <Carousel.Item className="slide-tisa">
+            <div className="layer">
+                <img
+                    className="d-block w-100"
+                    src={image2}
+                    alt="Second slide"
+                />
+                <Carousel.Caption className="d-flex h-100 align-items-center justify-content-center">
+                    <div className="d-flex flex-column align-items-center justify-content-center">
+                        {/* <h1>TISA</h1> */}
+                        <img
+                            className="tisa-logo"
+                            src={tisaLogo}
+                            alt="Tisa Logo"
+                        />
+                        <p>Time saving technology</p>
+                    </div>
+                </Carousel.Caption>
+            </div>
         </Carousel.Item>
         {/* <Carousel.Item>
             <img
