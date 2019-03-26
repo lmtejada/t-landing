@@ -2,7 +2,7 @@ import React from "react";
 
 import "./footer.scss";
 
-import { FaFacebook, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaYoutube, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Footer = () => (
     <footer className="footer" align="center">
@@ -11,13 +11,19 @@ const Footer = () => (
         </div>
         <div className="mt-3">
             <a href="https://www.google.com.co">
-                <FaFacebook className="facebook-icon" />
+                <FaFacebook />
             </a>
             <a href="https://www.google.com.co">
-                <FaYoutube className="youtube-icon" />
+                <FaYoutube />
             </a>
             <a href="https://www.google.com.co">
-                <FaTwitter className="twitter-icon" />
+                <FaTwitter />
+            </a>
+            <a href="https://www.google.com.co">
+                <FaInstagram />
+            </a>
+            <a href="https://www.google.com.co">
+                <FaLinkedin />
             </a>
         </div>
     </footer>

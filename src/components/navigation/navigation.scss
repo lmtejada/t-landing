@@ -2,8 +2,8 @@
 
 nav.navbar {
     padding: 16px;
-    background-color: $color-third-branding;
-    color: $color-secundary-branding;
+    background-color: white;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.12);
     
     .navbar-nav .nav-item a {
         color: $color-secundary-branding;
@@ -16,15 +16,13 @@ nav.navbar {
     }
     
     .navbar-nav .nav-item a:hover {
-        color: white ;
         text-decoration: none;
         font-weight: bold;
-        background-color: $color-third-branding;
     }
     
-    .dropdown-menu {
-        background-color: $color-third-branding;
-    }
+    // .dropdown-menu {
+    //     background-color: $color-third-branding;
+    // }
     
     .dropdown {
         .dropdown-toggle.nav-link {

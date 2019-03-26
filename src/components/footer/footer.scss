@@ -2,8 +2,9 @@
 
 footer {
     padding: 24px;
-    background-color: $color-third-branding;
+    background-color: white;
     color: $color-secundary-branding;
+    box-shadow: 0 -1px 5px 0 rgba(0,0,0,.12);
 
     a {
         svg {

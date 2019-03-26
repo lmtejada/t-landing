@@ -42,22 +42,22 @@ const Plans = () => (
         <Title title="Planes y precios" />
         <div className="row items">
             <div className="mb-5 mx-auto col-lg-4 col-sm-8">
-                <PlanCard plan="free" price="0 /mes" >
+                <PlanCard planId={1} plan="free" price="0 /mes" >
                     <FeaturesList plan="free" />
                 </PlanCard>
             </div>
             <div className="mb-5 mx-auto col-lg-4 col-sm-8">
-                <PlanCard plan="silver" price="$19.900 /mes">
+                <PlanCard planId={2} plan="silver" price="$19.900 /mes">
                     <FeaturesList plan="silver" />
                 </PlanCard>
             </div>
             <div className="mb-5 mx-auto col-lg-4 col-sm-8">
-                <PlanCard plan="gold" price="$23.900 /mes" >
+                <PlanCard planId={3} plan="gold" price="$23.900 /mes" >
                     <FeaturesList plan="gold" />
                 </PlanCard>
             </div>
         </div>
     </Container>
-)
+);
 
 export default Plans;

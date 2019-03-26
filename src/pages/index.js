@@ -10,7 +10,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <CustomCarousel />
-    <FeaturePanels />
+    <FeaturePanels page="index" />
   </Layout>
 )
 
