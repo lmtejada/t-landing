@@ -10,7 +10,7 @@ const AboutUs = () => (
   <Layout>
     <SEO title="About us" />
     <Profiles />
-    <Clients />
+    {/* <Clients /> */}
   </Layout>
 )
 

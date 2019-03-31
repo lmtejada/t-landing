@@ -9,6 +9,7 @@ import image2 from "../../images/access.jpg";
 import image3 from "../../images/save.jpg";
 import image4 from "../../images/security.jpg";
 import image5 from "../../images/rips.gif";
+import image6 from "../../images/tisa.gif";
 
 import "./featurePanels.scss";
 
@@ -56,7 +57,7 @@ const FeaturePanels = ({ page }) => (
                     <Title title="TisaMed" />
                     <SingleFeature
                         title="Simple"
-                        image={image1}
+                        image={image6}
                         orientation="left"
                         animation="left"
                         color={false}>

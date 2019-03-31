@@ -6,6 +6,7 @@ import {
     Link,
     // navigate 
 } from "gatsby";
+import tisaLogo from "../../images/tisa-logo.png";
 
 import "./navigation.scss";
 
@@ -14,6 +15,11 @@ const Navigation = () => (
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="navbar-nav" className="d-flex justify-content-center">
             <Nav>
+                <img
+                    // className="tisa-logo"
+                    src={tisaLogo}
+                    alt="Tisa Logo"
+                />
                 <Nav.Item><Link to="/">Inicio</Link></Nav.Item>
                 <Nav.Item><Link to="/tisa-med">TisaMed</Link></Nav.Item>
                 <Nav.Item><Link to="/about-us/">Nosotros</Link></Nav.Item>
