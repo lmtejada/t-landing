@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import Container from 'react-bootstrap/Container';
 import Title from "../title/title";
@@ -55,12 +56,19 @@ const FeaturePanels = ({ page }) => (
                 :
                 <React.Fragment>
                     <Title title="TisaMed" />
+                    <ScrollAnimation animateIn="fadeInDown" animateOnce={true}>
+                        <div className="p-5 text-center">
+                            <h4 className="text-center">La aplicación web de historias clínicas digitales que te permite trabajar de forma ágil y segura con planes acordes a tus necesidades.</h4>
+                            <br></br>
+                            <h4 className="text-center">TisaMed se caracteriza por ser:</h4>
+                        </div>
+                    </ScrollAnimation>
                     <SingleFeature
                         title="Simple"
                         image={image6}
                         orientation="left"
                         animation="left"
-                        color={false}>
+                        color={true}>
                         Con módulos precisos e interconectados mediante un flujo natural de actividades propias de la consulta médica, TisaMed ofrece una forma fácil e intuitiva de registrar las historias clínicas sin necesidad de complejas y costosas capacitaciones.
                     </SingleFeature>
                     <SingleFeature
@@ -68,7 +76,7 @@ const FeaturePanels = ({ page }) => (
                         image={image5}
                         orientation="right"
                         animation="right"
-                        color={true}>
+                        color={false}>
                         Desarrollada desde el inicio pensando en el usuario final, TisaMed fue diseñada para satisfacer todas tus necesidades. Almacenamiento de pacientes, diagnósticos, evoluciones, generación de archivos RIPS de forma automática e impresión de historias clínicas. Todo desde un simple explorador web.
                     </SingleFeature>
                     <SingleFeature
@@ -76,13 +84,13 @@ const FeaturePanels = ({ page }) => (
                         image={image1}
                         orientation="left"
                         animation="left"
-                        color={false}>
+                        color={true}>
                         Desde el plan gratuito hasta el gold TisaMed ofrece todas sus funcionalidades sin limitaciones*. Con precios desde COP 19.900/mes y hasta COP 23.900/mes tendrás acceso a todas las herramientas que llevarán tus historias clínicas a la era digital.
                         <br></br>
                         <br></br>
-                        <i>
+                        <p className="disclaimer">
                             * todos los planes ofrecen acceso a todos los módulos de la aplicación. La diferencia radica  en la cantidad máxima de pacientes que se pueden registrar por plan.
-                        </i>
+                        </p>
                     </SingleFeature>
                 </React.Fragment>
         }

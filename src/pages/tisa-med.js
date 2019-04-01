@@ -27,14 +27,22 @@ const TisaMed = () => (
 
         <FeaturePanels page="tisamed" />
 
+        <div className="text-center">
+            <h3 className="mt-5 mb-4 text-center">¿Ya estas registrado? </h3>
+            <button onClick={redirect} type="button" className="btn btn-primary btn-lg align-self-center mb-4">Ingresar</button>
+        </div>
+
+        <hr></hr>
+
         <ScrollAnimation animateIn="fadeInDown" animateOnce={true}>
             <Plans />
         </ScrollAnimation>
+
     </Layout>
 );
 
-// const redirect = () => {
-//     window.open('https://tisamed.tisatechnology.com/createUser', '_blank');
-// };
+const redirect = () => {
+    window.open('https://tisamed.tisatechnology.com', '_blank');
+};
 
 export default TisaMed

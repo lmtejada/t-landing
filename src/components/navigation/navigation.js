@@ -14,12 +14,17 @@ const Navigation = () => (
     <Navbar>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="navbar-nav" className="d-flex justify-content-center">
+            <Navbar.Brand>
+                <Link to="/">
+                    <img
+                        src={tisaLogo}
+                        height="30"
+                        className="d-inline-block align-top"
+                        alt="Tisa Logo"
+                    />
+                </Link>
+            </Navbar.Brand>
             <Nav>
-                <img
-                    // className="tisa-logo"
-                    src={tisaLogo}
-                    alt="Tisa Logo"
-                />
                 <Nav.Item><Link to="/">Inicio</Link></Nav.Item>
                 <Nav.Item><Link to="/tisa-med">TisaMed</Link></Nav.Item>
                 <Nav.Item><Link to="/about-us/">Nosotros</Link></Nav.Item>

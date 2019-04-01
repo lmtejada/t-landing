@@ -9,6 +9,8 @@ import tisaLogo from "../../images/tisa-logo.png";
 // import image3 from "../../images/brainstorming.jpeg";
 import "./carousel.scss";
 
+import { FaAngleDown } from "react-icons/fa";
+
 const CustomCarousel = () => (
     <Carousel controls={false} interval={5000}>
         <Carousel.Item>
@@ -24,28 +26,25 @@ const CustomCarousel = () => (
                     <Link to="/tisa-med/">
                         <button type="button" className="btn btn-primary btn-lg align-self-center">Conoce más</button>
                     </Link>
+
+                    <div>
+                        <FaAngleDown onClick={scrollTo} />
+                    </div>
                 </div>
             </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item className="slide-tisa">
-            <div className="layer">
-                <img
-                    className="d-block w-100"
-                    src={image2}
-                    alt="Second slide"
-                />
-                <Carousel.Caption className="d-flex h-100 align-items-center justify-content-center">
-                    <div className="d-flex flex-column align-items-center justify-content-center">
-                        {/* <h1>TISA</h1> */}
-                        <img
-                            className="tisa-logo"
-                            src={tisaLogo}
-                            alt="Tisa Logo"
-                        />
-                        <p>Time saving technology</p>
-                    </div>
-                </Carousel.Caption>
-            </div>
+        <Carousel.Item>
+            <img
+                className="d-block w-100"
+                src={image2}
+                alt="Second slide"
+            />
+            <Carousel.Caption className="d-flex h-100 align-items-center justify-content-center">
+                <div className="d-flex flex-column align-items-center justify-content-center">
+                    <h1>TISA</h1>
+                    <p>Time saving technology</p>
+                </div>
+            </Carousel.Caption>
         </Carousel.Item>
         {/* <Carousel.Item>
             <img
@@ -62,5 +61,10 @@ const CustomCarousel = () => (
         </Carousel.Item> */}
     </Carousel>
 )
+
+const scrollTo = () => {
+    console.log(window.innerHeight);
+    window.scroll(0, window.innerHeight + 20);
+};
 
 export default CustomCarousel;

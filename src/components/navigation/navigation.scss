@@ -1,17 +1,17 @@
 @import 'src/sass/variables';
 
 nav.navbar {
-    padding: 16px;
+    padding: 20px;
     background-color: white;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.12);
-
-    img {
-        height:40px;
-    }
     
+    .navbar-brand {
+        position: absolute;
+        left: 20px;
+    }
     .navbar-nav .nav-item a {
         color: $color-secundary-branding;
-        margin-right: 16px;
+        margin-right: 50px;
         text-transform: uppercase;
     }
     
