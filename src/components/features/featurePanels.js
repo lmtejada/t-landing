@@ -57,7 +57,7 @@ const FeaturePanels = ({ page }) => (
                 <React.Fragment>
                     <Title title="TisaMed" />
                     <ScrollAnimation animateIn="fadeInDown" animateOnce={true}>
-                        <div className="p-5 text-center">
+                        <div className="p-5 desc text-center col-sm-8">
                             <h4 className="text-center">La aplicación web de historias clínicas digitales que te permite trabajar de forma ágil y segura con planes acordes a tus necesidades.</h4>
                             <br></br>
                             <h4 className="text-center">TisaMed se caracteriza por ser:</h4>

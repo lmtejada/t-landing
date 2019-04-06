@@ -38,3 +38,11 @@ nav.navbar {
         display: block;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    nav.navbar {
+        .navbar-brand {
+            display: none;
+        }
+    }
+}

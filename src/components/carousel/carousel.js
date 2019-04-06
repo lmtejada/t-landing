@@ -9,7 +9,7 @@ import tisaLogo from "../../images/tisa-logo.png";
 // import image3 from "../../images/brainstorming.jpeg";
 import "./carousel.scss";
 
-import { FaAngleDown } from "react-icons/fa";
+import { IoIosArrowDown } from "react-icons/io";
 
 const CustomCarousel = () => (
     <Carousel controls={false} interval={5000}>
@@ -20,15 +20,14 @@ const CustomCarousel = () => (
                 alt="First slide"
             />
             <Carousel.Caption className="d-flex h-100 align-items-center justify-content-center">
-                <div className="d-flex flex-column">
+                <div className="d-flex flex-column align-items-center justify-content-center">
                     <h1>TisaMed</h1>
                     <p>Administración gratuita* de historias clínicas</p>
                     <Link to="/tisa-med/">
                         <button type="button" className="btn btn-primary btn-lg align-self-center">Conoce más</button>
                     </Link>
-
-                    <div>
-                        <FaAngleDown onClick={scrollTo} />
+                    <div className="arrow-icon">
+                        <IoIosArrowDown onClick={scrollTo} />
                     </div>
                 </div>
             </Carousel.Caption>
@@ -43,6 +42,9 @@ const CustomCarousel = () => (
                 <div className="d-flex flex-column align-items-center justify-content-center">
                     <h1>TISA</h1>
                     <p>Time saving technology</p>
+                    <div className="arrow-icon">
+                        <IoIosArrowDown onClick={scrollTo} />
+                    </div>
                 </div>
             </Carousel.Caption>
         </Carousel.Item>
@@ -63,7 +65,6 @@ const CustomCarousel = () => (
 )
 
 const scrollTo = () => {
-    console.log(window.innerHeight);
     window.scroll(0, window.innerHeight + 20);
 };
 

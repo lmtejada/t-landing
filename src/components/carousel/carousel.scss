@@ -31,6 +31,23 @@
                     box-shadow: none !important;
                 }
             }
+            .arrow-icon {
+                position: absolute;
+                -webkit-animation: arrow-move 2s infinite;
+                animation: arrow-move 2s infinite;
+                svg {
+                    cursor: pointer;
+                    font-size: 40px;
+                }
+            }
+            @-webkit-keyframes arrow-move {
+                from {top: 490px;}
+                to {top: 520;}
+            }
+            @keyframes arrow-move {
+                from {top: 490px;}
+                to {top: 520px;}
+            }
         }
     }
 }
