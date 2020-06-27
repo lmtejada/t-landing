@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Tisa`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Tisa Technology es una empresa de tecnología enfocada en la creación de aplicaciones simples, poderosas y al alcance de todos. Cuenta con personal altamente calificado que, junto al uso de tecnología de punta, garantiza aplicaciones acordes a las últimas tendencias en cuanto a diseño, funcionalidad, rendimiento y vanguardia.`,
+    author: `Tisa`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

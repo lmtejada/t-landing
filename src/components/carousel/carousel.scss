@@ -41,12 +41,16 @@
                 }
             }
             @-webkit-keyframes arrow-move {
-                from {top: 490px;}
-                to {top: 520;}
+                from {top: calc(100vh - 40px);}
+                to {top: calc(100vh - 20px);}
+                // from {top: 490px;}
+                // to {top: 520;}
             }
             @keyframes arrow-move {
-                from {top: 490px;}
-                to {top: 520px;}
+                from {top: calc(100vh - 150px);}
+                to {top: calc(100vh - 120px);}
+                // from {top: 490px;}
+                // to {top: 520px;}
             }
         }
     }
